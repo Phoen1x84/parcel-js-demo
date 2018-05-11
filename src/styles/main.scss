@@ -1,0 +1,24 @@
+@import './foundation/_brand';
+
+// modules
+@import './modules/_global-header';
+@import './modules/_hero-banner';
+
+.hero-banner {
+  background: #f1f1f1 url('./../images/classes.png') no-repeat center;
+  background-size: cover;
+  min-height: calc(100vh - 60px);
+  position: relative;
+  overflow: hidden;
+
+  &:before {          
+    content: '';
+    display: block;
+    position: absolute;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    transform: rotate(45deg);     
+    box-shadow: 0 0 100vw 100vw #f2f2f2, inset 0 0 3px 5px #f2f2f2;
+  }
+}
